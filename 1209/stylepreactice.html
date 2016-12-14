@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css?family=Molle:400i');
+        @import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+        
+/*    reset css*/
+        *{
+            box-sizing: border-box;
+            font-family: "Molle","Noto Sans TC",sans-serif;
+        }
+        body,h1,h2,h3,h4,h5,h6,p{
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            width: 100%;
+            vertical-align: top;
+            border:0;
+        }
+        .clearfix::after{
+            content:"";
+            display: block;
+            clear: both;
+        }
+        .full-width{
+            width: 100%;
+        }
+        .fixed-width{
+            width: 1200px;
+            margin: auto;
+        }
+        .col-3{
+            float: left;
+            width:calc(100%/3 - 20px);
+            margin: 0 10px;
+        }
+        .col-4{
+            float: left;
+            width:calc(100%/4 - 20px);
+            margin: 0 10px;
+        }
+        
+        wrapper{
+            margin: auto;
+        }
+        nav {
+            background-color: rgba(16, 4, 162, 0.2);
+/*          position: absolute;*/
+            position: fixed;
+            top:15px;
+        }
+        
+        nav .logo{
+            width: 100px;
+            height: 50px;
+            background-color: #ccc;
+            float: left;
+        }
+         nav .menu{
+            float:right;
+        }
+        nav ul{
+            margin: 0;
+            padding: 0;
+        }
+        nav .menu li{
+            float: left;
+            list-style-type: none;
+            margin: 0 10px;
+        }
+        nav .menu a{
+            text-decoration: none;
+            color: #fff;
+            padding: 0 10px;
+            height: 50px;
+            line-height: 50px;
+            display: block;
+            font-size: 14px;
+                    }
+        header{
+            background-image: url(http://lorempicsum.com/futurama/800/600/4);
+            background-size: cover;
+            height: 600px;
+/*            padding: 250px 0;*/
+            text-align: center;
+            vertical-align: middle;
+            display:inline-block;
+            color: #fff;
+            font-size: 0;
+        }
+        header::before{
+            content:"";
+            display: inline-block;
+            vertical-align: middle;
+            height: 100%;
+        }
+        header .fixed-width{
+            vertical-align: middle;
+            display: inline-block;
+/*            background-color: rgba(0,0,0,.2);*/
+        }
+        header .content{
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 14px;
+            
+        }
+        header a{
+            text-decoration: none;
+            color: #fff;
+            
+        }
+    </style>
+</head>
+<body>
+ 
+   <nav class="full-width clearfix">
+      <div class="fixed-width">
+       <div class="logo"></div>
+       <div class="menu">
+           <ul>
+               <li><a href="#">About Us</a></li>
+               <li><a href="#">Products</a></li>
+               <li><a href="#">Journal</a></li>
+               <li><a href="#">Contact Us</a></li>
+           </ul>
+       </div>
+       </div>
+   </nav>
+   
+   
+   <header class="full-width">
+     <div class="fixed-width">
+      <div class="content">
+       <h1>Sunt In Culpa officia Deserunt</h1>
+       <p>dolore magna allqua ad minim veniam occaecat</p>
+       <a href="#">More</a>
+       </div>
+       </div>
+   </header>
+    <div style="height:10000px;"></div>
+</body>
+</html>
